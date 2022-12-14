@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:islami/my_theme_data.dart';
+import 'package:todo/my_theme_data.dart';
+
+import 'ui/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +29,10 @@ class MyApp extends StatelessWidget {
         Locale("ar")
       ],
       locale: Locale("en"),
+      routes: {
+        Home.routeName:(_)=>Home(),
+      },
+      initialRoute: Home.routeName,
 
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/bottom_sheets/add_bottom_sheet.dart';
 import 'package:todo/ui/home/tabs/list/list_tab.dart';
 import 'package:todo/ui/home/tabs/setting_tab.dart';
 
@@ -23,7 +24,9 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButton: FloatingActionButton(
 
-        onPressed: (){},
+        onPressed: (){
+          return showbottomsheet();
+        },
         shape: StadiumBorder(
           side: BorderSide(
             color: Colors.white,
@@ -55,5 +58,11 @@ class _HomeState extends State<Home> {
       ),
       body: tabs[currentindex],
     );
+  }
+
+  void showbottomsheet() {
+    showModalBottomSheet(context: context, builder: (_){
+      return AddBottomSheet();
+    });
   }
 }

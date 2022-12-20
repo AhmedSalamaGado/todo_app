@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/my_theme_data.dart';
+import 'package:todo/utils/my_theme_data.dart';
 
 class SettingsTab extends StatelessWidget{
   const SettingsTab({Key? key}) : super(key: key);

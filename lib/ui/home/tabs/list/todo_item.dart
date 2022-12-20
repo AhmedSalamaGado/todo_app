@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/modle/item_dm.dart';
-import 'package:todo/my_theme_data.dart';
+import 'package:todo/utils/my_theme_data.dart';
 
 class ToDoItem extends StatelessWidget{
   TodoDm todo;

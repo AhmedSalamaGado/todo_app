@@ -27,6 +27,8 @@ class mythemedata{
      titleSmall: TextStyle(fontSize: 12,fontWeight: FontWeight.normal,color: Colors.black),
      bodyLarge:  TextStyle(fontSize: 14,fontWeight: FontWeight.bold,color: Colors.black),
      bodyMedium:  TextStyle(fontSize: 14,fontWeight: FontWeight.normal,color: primarycolor),
+     displayMedium: TextStyle(fontSize:18 ,fontWeight: FontWeight.bold,color: Colors.black),
+     labelMedium: TextStyle(fontSize:20 ,fontWeight: FontWeight.bold,color:Color(0xffA9A9A9)),
    )
  );
  static ThemeData darkMode = ThemeData (
